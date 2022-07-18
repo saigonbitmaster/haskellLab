@@ -7,11 +7,11 @@ import Language.Haskell.TH
 subFunc a b = a + b
 
 myFunc :: Int -> Int -> Q Exp
-myFunc a b = [| subFunc a b |] --call function in haskell code: a = $(myFunc 100 200)
+myFunc a b = [| subFunc a b |] --call this function in haskell code: a = $(myFunc 100 200)
 
 
 myFunc1 :: Q Exp
-myFunc1 = [| \a b -> a + b |]  -- call function in haskell code: a = $myFunc 100 200
+myFunc1 = [| \a b -> a + b |]  --call this function in haskell code: a = $myFunc 100 200
 
 
 myExp :: Q Exp
