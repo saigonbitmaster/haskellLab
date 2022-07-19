@@ -1,7 +1,8 @@
-Install haskell: brew install ghc cabal-install
-Run haskell file as a script:  runhaskell file.hs
-Combine haskell file: ghc --make main.hs -o main //-o create a binary file name different from .hs file
-Haskell terminal: ghci
+Install haskell: brew install ghc cabal-install <br />
+Run haskell file as a script:  <br />
+runhaskell file.hs, eg: runhaskell flowControl.hs <br />
+Combine haskell file: ghc --make main.hs -o main //-o create a binary file name different from .hs file<br />
+Haskell terminal: ghci <br />
 
 
 Haskell concepts:
@@ -691,5 +692,5 @@ main = do
   let a = $(return (InfixE (Just (LitE (IntegerL 1))) (VarE (mkName "+")) (Just (LitE (IntegerL 2))))) --AST code
   print a --3
 
---run code: runhaskell test.hs
+--run a haskell code file: runhaskell test.hs
 #PLUTUS

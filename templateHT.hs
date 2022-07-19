@@ -1,5 +1,5 @@
-{- Printf.hs -}
-module Printf where
+{- this is template file that used by haskell file templateRun.hs-}
+module TemplateHT where
 
 {-# LANGUAGE TemplateHaskell #-}
 import Language.Haskell.TH
