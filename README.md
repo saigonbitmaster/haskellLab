@@ -1,20 +1,24 @@
-Install haskell: brew install ghc cabal-install <br />
-Run haskell file as a script:  <br />
-runhaskell file.hs, eg: runhaskell flowControl.hs <br />
-Combine haskell file: ghc --make main.hs -o main //-o create a binary file name different from .hs file<br />
-Haskell terminal: ghci <br />
+Run this project:
+- Install haskell: brew install ghc cabal-install <br />
+- Run haskell file as a script:  runhaskell file.hs, eg: runhaskell flowControl.hs <br />
+- Combine haskell file: 
+  - ghc --make main.hs -o main //-o create a binary file name different from .hs file<br />
+- Run haskell template: 
+  - run template: ghc --make -XTemplateHaskell main.hs -o main
+  - run script:  runhaskell -XTemplateHaskell main.hs
+- Haskell terminal: ghci <br />
 
 
 Haskell concepts:
 - everything is with type: functions, values ...
 - every functions are math expressions
 
-links to learn:
-https://ghc.gitlab.haskell.org/ghc/doc/users_guide/exts/intro.html
-https://www.haskell.org/tutorial/io.html
-https://www.tutorialspoint.com/haskell/haskell_input_and_output.htm
-https://www.schoolofhaskell.com/user/snoyberg/general-haskell/exceptions/catching-all-exceptions
-https://www.tweag.io/blog/2020-04-16-exceptions-in-haskell/
+Links to learn:
+- https://ghc.gitlab.haskell.org/ghc/doc/users_guide/exts/intro.html
+- https://www.haskell.org/tutorial/io.html
+- https://www.tutorialspoint.com/haskell/haskell_input_and_output.htm
+- https://www.schoolofhaskell.com/user/snoyberg/general-haskell/exceptions/catching-all-exceptions
+- https://www.tweag.io/blog/2020-04-16-exceptions-in-haskell/
 
 #functor, applicative, monad
 A functor is a data type that implements the Functor typeclass.
