@@ -21,7 +21,7 @@ A functor is a data type that implements the Functor typeclass.
 An applicative is a data type that implements the Applicative typeclass.
 A monad is a data type that implements the Monad typeclass.
 A Maybe implements all three, so it is a functor, an applicative, and a monad.
-
+print y
 
 Haskell is a widely used purely functional language. Functional programming is based on mathematical functions. 
 #add module to app: cardanoLab.cabal add mtl module. then when run cabal run or build it will install mtl
@@ -547,6 +547,7 @@ f x = x + 100000
 
 y = f 1
 main = print y
+
 ==
 type class
 What are typeclasses?
