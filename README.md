@@ -4,8 +4,8 @@ Run this project:
 - Combine haskell file: 
   - ghc --make main.hs -o main //-o create a binary file name different from .hs file<br />
 - Run haskell template: 
-  - run template: ghc --make -XTemplateHaskell main.hs -o main
-  - run script:  runhaskell -XTemplateHaskell main.hs
+  - build template: ghc --make -XTemplateHaskell main.hs -o main
+  - run as script:  runhaskell -XTemplateHaskell main.hs
 - Haskell terminal: ghci <br />
 
 
