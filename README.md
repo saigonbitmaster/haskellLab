@@ -31,6 +31,12 @@ Haskell is a widely used purely functional language. Functional programming is b
 #add module to app: cardanoLab.cabal add mtl module. then when run cabal run or build it will install mtl
 build-depends:    base ^>=4.14.3.0, mtl
 
+#cabal
+Install a library package 
+cabal install --lib  packageName
+Install a executable package
+cabal install packageName
+
 #import 
 use as to different the duplicate name of the module, both Text and Lazy has pack function so if not use as it will cause an error.
 import Data.Text as MyText
@@ -698,4 +704,9 @@ main = do
   print a --3
 
 --run a haskell code file: runhaskell test.hs
+
+#Crypto 
+cabal install --lib  cryptonite --this to use Crypto.*
+
+
 #PLUTUS
