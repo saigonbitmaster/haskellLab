@@ -296,6 +296,7 @@ instance FromJSON Person
 
 constraint type (ép kiểu)
 (+) :: (Num a) => a -> a -> a
+Prelude> (+) 1 2 --3
 
 quick assign type for a value
 let a = 5 :: Float
@@ -706,7 +707,7 @@ main = do
 --run a haskell code file: runhaskell test.hs
 
 #Crypto 
-cabal install --lib  cryptonite --this to use Crypto.*
-
+cabal install --lib  cryptonite --this to use Crypto.Hash
+cabal install --lib ed25519     --this to use Crypto.Sign
 
 #PLUTUS

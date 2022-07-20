@@ -1,6 +1,6 @@
-import ExportFunction
-import ExportFunction (showEven)
-import ExportFunction as B
+import ExportFunction --import a module
+import ExportFunction (showEven) --import a function from a module
+import ExportFunction as B --alias a module to avoid duplication
 
 main = do 
    print(ExportFunction.showEven 4) 
