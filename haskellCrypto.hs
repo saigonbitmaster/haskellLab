@@ -9,10 +9,11 @@ import Crypto.Hash as H
 import Data.ByteString (ByteString)
 import qualified Data.ByteString.Char8 as B
 
+
 hashFunc :: ByteString -> IO ()
 hashFunc msg = do
-    putStrLn $ "  sha1(" ++ show msg ++ ") = " ++ show (H.hashWith SHA1   msg)
-    putStrLn $ "sha256(" ++ show msg ++ ") = " ++ show (H.hashWith SHA256 msg)
+    print $ "  sha1(" ++ show msg ++ ") = " ++ show (H.hashWith SHA1   msg)
+    print $ "sha256(" ++ show msg ++ ") = " ++ show (H.hashWith SHA256 msg)
 
 
 signFunc :: ByteString -> IO Bool

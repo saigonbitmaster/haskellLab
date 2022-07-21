@@ -39,12 +39,27 @@ cabal install packageName
 
 #import 
 use as to different the duplicate name of the module, both Text and Lazy has pack function so if not use as it will cause an error.
+import qualified Data.List
 import Data.Text as MyText
 import Data.ByteString.Lazy  
 
 
 a = Data.Text.pack "abc" --full package name
 b = MyText.pack "abc"    -- package alias
+
+#qualified & unqualified import
+unqualified import (the default): use anything imported just by its name.
+qualified import: you have to prefix the name with the module it's imported from.
+
+import Data.List (sort)
+This is an unqualified import. can now use: sort or Data.List.sort.
+
+import qualified Data.List (sort)
+This is a qualified import. Now sort by itself doesn't work, and have to use Data.List.sort
+
+
+import qualified Data.List (sort) as LS
+now can write LS.sort, which is shorter.
 
 #tools
 Prelude> :l main.hs -- load hs file
